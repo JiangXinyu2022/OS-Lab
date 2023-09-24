@@ -121,7 +121,7 @@ void interrupt_handler(struct trapframe *tf) {
             }
             break;
             // cprintf("Supervisor timer interrupt\n");
-             /* LAB1 EXERCISE2   YOUR CODE :  */
+             /* LAB1 EXERCISE2   YOUR CODE :  2111258 2111527 2113879*/
             /*(1)设置下次时钟中断- clock_set_next_event()
              *(2)计数器（ticks）加一
              *(3)当计数器加到100的时候，我们会输出一个`100ticks`表示我们触发了100次时钟中断，同时打印次数（num）加一
@@ -161,7 +161,7 @@ void exception_handler(struct trapframe *tf) {
             break;
         case CAUSE_ILLEGAL_INSTRUCTION:
              // 非法指令异常处理
-             /* LAB1 CHALLENGE3   YOUR CODE :  */
+             /* LAB1 CHALLENGE3   YOUR CODE : 2111258 2111527 2113879 */
             //cprintf("foasnqwedascx");
             
             cprintf("Exception type:Illegal instruction\n");
@@ -177,7 +177,7 @@ void exception_handler(struct trapframe *tf) {
             cprintf("ebreak caught at 0x%08x\n", tf->epc);
             tf->epc+=4;
             //断点异常处理
-            /* LAB1 CHALLLENGE3   YOUR CODE :  */
+            /* LAB1 CHALLLENGE3   YOUR CODE :2111258 2111527 2113879  */
             /*(1)输出指令异常类型（ breakpoint）
              *(2)输出异常指令地址
              *(3)更新 tf->epc寄存器
