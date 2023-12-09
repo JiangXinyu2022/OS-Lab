@@ -389,7 +389,7 @@ do_fork(uint32_t clone_flags, uintptr_t stack, struct trapframe *tf) {
     struct proc_struct *proc;
     if (nr_process >= MAX_PROCESS) {
         goto fork_out;
-    }code
+    }
     ret = -E_NO_MEM;
     //LAB4:EXERCISE2 2111258 2111527 2113879
     /*
