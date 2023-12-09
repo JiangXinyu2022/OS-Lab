@@ -83,8 +83,8 @@
 #include <atomic.h>
 #include <list.h>
 
-typedef uintptr_t pte_t;        //pte_t: 页表项（Page Table Entry）的数据类型。
-typedef uintptr_t pde_t;        //pde_t: 页目录项（Page Directory Entry）的数据类型。
+typedef uintptr_t pte_t;//pte_t: 页表项（Page Table Entry）的数据类型。
+typedef uintptr_t pde_t;//pde_t: 页目录项（Page Directory Entry）的数据类型。
 typedef pte_t swap_entry_t; //the pte can also be a swap entry
 
 /* *
